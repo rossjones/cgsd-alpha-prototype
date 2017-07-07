@@ -13,7 +13,7 @@ module.exports = {
         connection: {
           database: 'pp_alpha',
           host: 'localhost',
-          user: 'turkeyred',
+          user: process.env.DATABASE_USER || 'turkeyred',
           password: '',
           port: 5432,
           ssl: false
